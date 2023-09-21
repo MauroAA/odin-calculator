@@ -1,33 +1,34 @@
-const firstNumber = null;
-const operator = null;
-const secondNumber = null;
+let firstNumber = '';
+let secondNumber = '';
+let operator = null;
 
-function sum (a, b) {
-    return a + b
+
+function add (a, b) {
+    return a + b;
 }
 
-function rest (a, b) {
-    return a - b
+function substract (a, b) {
+    return a - b;
 }
 
 function multiply (a, b) {
-    return a * b
+    return a * b;
 }
 
 function divide (a, b) {
-    return a / b
+    return a / b;
 }
 
 
 function operate (operator, a, b) {
     switch (operator) {
         case '+':
-            return sum (a, b)
+            return add (a, b);
         case '-':
-            return rest (a, b);
+            return substract (a, b);
         case '*':
             return multiply (a, b);
         case '/':
-            console.log (divide (a, b));
+            return divide (a, b);
     }
 }
