@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +10,21 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: 100vh;
     background-color: #EBECED;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .calculator {
-    width: 25vw;
+    width: 400px;
     height: 85vh;
     border-radius: 30px;
-    background-color: black;
+    background-color: #999;
+    border: 2px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +42,11 @@ body {
     margin: 20px;
     background-color: #fff;
     border-radius: 10px;
+    border: 2px solid #000;
+}
+
+#clear {
+    background-color: #f60;
 }
 
 .wrapper {
@@ -52,10 +63,18 @@ body {
     flex: 1;
 }
 
-.btn {
+button {
+    font-size: 1.3em;
     border: 1px solid #000;
     outline: none;
     cursor: pointer;
+    border-radius: 100%;
+    margin: 3px;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #ccc;
 }
 
 .clear {
@@ -118,4 +137,8 @@ body {
 
 .equals {
     grid-area: equals;
+}
+
+footer {
+    font-size: 20px;
 }
